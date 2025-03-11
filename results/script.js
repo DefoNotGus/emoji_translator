@@ -19,7 +19,14 @@ function translateToEmoji() {
 
     document.getElementById("output").innerText = text;
 }
+//ENTER KEY FUNCTION
+document.getElementById("inputText").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        translateToEmoji();
+    }
+});
 
+//KONAMI CODE FUNCTION
 let konamiCode = ["ArrowUp", "ArrowDown", "KeyB", "KeyA"];
 let userInput = [];
 
